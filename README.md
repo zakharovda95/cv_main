@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+# CV_Main
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Описание:
+    Мой вебсайт и основная точка входа в систему моих проектов. 
+    Включает в себя: 
+    - главную страницу с основной информацией;
+    - промолендинги, описывающие другие мои проекты;
+    Приятного просмотра :)
+### Технологии:
+- Nuxt 3
+- Pinia
+- TailwindCSS
+- GSAP
+- StoryBook
 
-## Setup
+### Развертывание проекта:
 
-Make sure to install the dependencies:
+#### При развертывании проекта вместе с master_repo: 
+- выполните общие шаги из README.md master_repo (до чекаута на ветку master)
+- выполните дополнительные шаги, указанные ниже
 
-```bash
-# npm
-npm install
+#### При инициализации проекта отдельно от master_repo (не рекоммендуется):
+- клонируйте репо на локальную машину `git clone https://github.com/zakharovda95/cv_main.git`
+- запустите скрипт `setup-project.sh` (или `yarn run setup-project`) - он сделает чекаут на рабочую ветку, установит зависимости и установит путь к папке с git хуками для этого проекта
 
-# pnpm
-pnpm install
+### Внесение изменений:
+- добавление файлов для индексации `git add .`
+- коммит `git commit -m <commit text>`
+- пуш `git push -u origin master`
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Перед коммитом должен сработать линтинг (описан в git hook)

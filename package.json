@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "init-project": "setup-project.sh",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "dev:host": "nuxt dev --host 0.0.0.0 --port 3000",
@@ -12,7 +13,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "custom:git-hook-path": "git config core.hooksPath ./.git-hooks || echo 'error'",
-    "default:git-hook-path": "setup-hook.sh",
     "show:git-hook-path": "git rev-parse --git-path hooks"
   },
   "dependencies": {
