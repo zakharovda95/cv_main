@@ -1,0 +1,12 @@
+ #!/bin/sh
+
+eslint . --fix
+
+lint_exit=$?
+if [[ $lint_exit != 0 ]]; then
+    echo "ESLint не найден."
+    exit 1
+fi
+
+# Продолжаем коммит, если нет ошибок линтинга
+exit 0

@@ -1,15 +1,24 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
-    enabled: true
+    enabled: true,
   },
+  css: [
+    '~/assets/styles/main.scss',
+    '~/assets/styles/tailwind.scss',
+  ],
   modules: [
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
   ],
   eslint: {
-    checker: true,
     config: {
-      stylistic: true
+      stylistic: false,
     }
-  }
-})
+  },
+  tailwindcss: {
+    viewer: true,
+    cssPath: ['~/assets/styles/tailwind.scss', { injectPosition: 'last' }],
+    configPath: '~/tailwind.config.js',
+  },
+});
