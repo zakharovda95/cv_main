@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/usr/bin/env bash
 
 eslint . --fix
 
@@ -8,5 +8,5 @@ if [[ $lint_exit != 0 ]]; then
     exit 1
 fi
 
-# Продолжаем коммит, если нет ошибок линтинга
+echo "Успешный линтинг перед коммитом"
 exit 0

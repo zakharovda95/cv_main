@@ -11,7 +11,9 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "git config core.hooksPath .git-hooks || echo 'Not in a git repo'"
+    "custom:git-hook-path": "git config core.hooksPath ./.git-hooks || echo 'error'",
+    "default:git-hook-path": "setup-hook.sh",
+    "show:git-hook-path": "git rev-parse --git-path hooks"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
