@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
 
-eslint . --fix
-
-lint_exit=$?
-if [[ $lint_exit != 0 ]]; then
-    echo "ESLint не найден."
-    exit 1
-fi
+yarn lintfix && git add -A .
 
 echo "Успешный линтинг перед коммитом"
 exit 0
