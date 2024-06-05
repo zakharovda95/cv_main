@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  css: ['~/assets/styles/main.scss', '~/assets/styles/tailwind.scss'],
+  css: ['~/assets/styles/main.scss', '~/assets/styles/tailwind-utils.scss'],
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -18,10 +18,4 @@ export default defineNuxtConfig({
     '@formkit/auto-animate',
     '@nuxtjs/svg-sprite',
   ],
-
-  tailwindcss: {
-    viewer: true,
-    cssPath: ['~/assets/styles/tailwind.scss', { injectPosition: 'last' }],
-    configPath: '~/tailwind.config.js',
-  },
 });

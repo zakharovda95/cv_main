@@ -1,0 +1,7 @@
+.bg-primary {
+  @apply bg-bgLightPrimary dark:bg-bgDarkPrimary;
+}
+
+.bg-secondary {
+  @apply bg-bgLightSecondary dark:bg-bgDarkSecondary;
+}

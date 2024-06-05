@@ -1,3 +1,5 @@
 <template>
-  <div>Главная</div>
+  <div>
+    <LazyUIFullScreenLoader />
+  </div>
 </template>

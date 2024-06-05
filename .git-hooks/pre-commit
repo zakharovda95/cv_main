@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-yarn lintfix && git add -A .
-
-echo "Успешный линтинг перед коммитом"
-exit 0

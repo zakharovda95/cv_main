@@ -1,6 +1,6 @@
 <template>
   <Head>
-    <Title>API: Личный кабинет (TRONK & AVinfoBot)</Title>
+    <Title>Dmitry Zakharov</Title>
     <Link href="https://fonts.googleapis.com" rel="preconnect" />
     <Link href="https://fonts.gstatic.com" rel="preconnect" />
     <Link
@@ -19,6 +19,7 @@
     class="min-h-svh bg-bgLightPrimary dark:bg-bgDarkPrimary text-textLightPrimary dark:text-textDarkPrimary"
   >
     <DefaultHeader />
+
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
