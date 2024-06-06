@@ -1,13 +1,13 @@
 export default defineNuxtConfig({
   imports: {
-    autoImport: true,
+    autoImport: true
   },
 
   devtools: {
-    enabled: true,
+    enabled: true
   },
 
-  css: ['~/assets/styles/main.scss', '~/assets/styles/tailwind-utils.scss'],
+  css: [ '~/assets/styles/main.scss', '~/assets/styles/tailwind-utils.scss' ],
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -17,5 +17,10 @@ export default defineNuxtConfig({
     'nuxt-lodash',
     '@formkit/auto-animate',
     '@nuxtjs/svg-sprite',
+    '@hypernym/nuxt-gsap'
   ],
+
+  svgSprite: {
+    input: '~/assets/sprite/svg'
+  },
 });
